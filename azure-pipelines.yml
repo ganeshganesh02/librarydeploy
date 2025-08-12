@@ -13,6 +13,10 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- task: UiPathInstallPlatform@5
+  inputs:
+    cliVersion: 'WIN_24.12.9166.24491'
+
 - task: UiPathDeploy@5
   inputs:
     orchestratorConnection: 'testing'
